@@ -89,20 +89,20 @@ themeToggle.addEventListener('click', () => {
     const githubProjects = [
         {
             title: "Calculatrice-(Back-end)",
-            description: "Une calculatrice simple (addition, sustraction, multiplication, division).",
+            description: "Une calculatrice simple (addition, soustraction, multiplication, division).",
             languages: "HTML, CSS, JavaScript,PHP",
             url: "https://projected.alwaysdata.net/calculator-v3/",
             image: "https://www.euroschoolindia.com/blogs/wp-content/uploads/2023/11/school-calculator-buying-guide-jpg.webp" 
         },
         {
             title: "Dictionnaire Animaux-(Back-end)",
-            description: "Dictionnaire des cent animaux les plus connues.",
+            description: "Dictionnaire des cents animaux les plus connus.",
             languages: "HTML, CSS, JavaScript, PHP",
             url: "https://projected.alwaysdata.net/Dictionnary-version3/",
             image: "https://thumbs.dreamstime.com/b/dictionnaire-fran%C3%A7ais-ouvert-sur-une-table-avec-loupe-livre-de-r%C3%A9f%C3%A9rence-d%C3%A9finitions-mots-langue-fran%C3%A7aise-un-objet-optique-236532187.jpg" 
         },
         {
-            title: "Website Pyrenees Audoises (Front-end)",
+            title: "Website Pyrénées Audoises (Front-end)",
             description: "Une site developpé avec Wordpress.",
             languages: "HTML, CSS, JavaScript, PHP",
             url: "http://luis-eduardo-go.sc2nbnd7186.universe.wf/wordpress_fr/",
@@ -111,14 +111,14 @@ themeToggle.addEventListener('click', () => {
         ,
         {
             title: "Application Maison Hantée (Front-End)",
-            description: "Application pour aider aux touristes qui visitent la Maison Hantée et le Musée de L'inquisition",
+            description: "Application pour aider les touristes qui visitent la Maison Hantée et le Musée de L'inquisition",
             languages: "HTML, CSS, JavaScript",
             url: "https://pr0jected.github.io/",
             image: "https://media.istockphoto.com/id/481231906/fr/vectoriel/horreur-maison-hant%C3%A9e.jpg?s=612x612&w=0&k=20&c=RqrqbAQYYYFcAAZnPv-8SBu3McCx_j3ZrZzYOLpFXuM=" 
         } 
         ,
         {
-            title: "Quiz Developpement(Front-End)",
+            title: "Quiz Développement(Front-End)",
             description: "Simple Quiz pour tester javascript en action.",
             languages: "HTML, CSS, JavaScript",
             url: "http://luis-eduardo-go.sc2nbnd7186.universe.wf/AF022025/QuizControlDynamique.html",
