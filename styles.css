@@ -13,12 +13,6 @@
     --card-bg: white;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
     --text-color: #f0f0f0;
@@ -27,43 +21,32 @@
     --light-color: #333;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-/*     color: var(--text-color);
-    background-color: #f9f9f9; */
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
-.card {
-    background-color: var(--card-bg);
-}
-
-#theme-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
+/* Header Styles */
 header {
     background-color: var(--primary-color);
     color: white;
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header h1 {
@@ -89,40 +72,13 @@ header h2 {
     box-shadow: var(--shadow);
 }
 
-.download-btn {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-weight: 600;
-}
-
-.download-btn:hover {
-    background-color: #c0392b;
-}
-
-
-.contact-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: var(--transition);
-}
-
-.contact-btn:hover {
-    background-color: #2980b9;
-}
+/* Contact Info */
 .contact-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact-info a {
@@ -142,6 +98,80 @@ header h2 {
     font-size: 1.2rem;
 }
 
+/* Download Buttons */
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    border: none;
+    cursor: pointer;
+}
+
+.download-btn.french {
+    background-color: #0055A4;
+    color: white;
+}
+
+.download-btn.french:hover {
+    background-color: #003d7a;
+}
+
+.download-btn.english {
+    background-color: #E63946;
+    color: white;
+}
+
+.download-btn.english:hover {
+    background-color: #c1121f;
+}
+
+.download-btn.spanish {
+    background-color: #F1BF00;
+    color: #333;
+}
+
+.download-btn.spanish:hover {
+    background-color: #d4a900;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+#theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Navigation */
 #main-nav {
     background-color: white;
     box-shadow: var(--shadow);
@@ -176,12 +206,14 @@ header h2 {
     background-color: rgba(52, 152, 219, 0.1);
 }
 
+/* Card Styles */
 .card {
-    background-color: white;
+    background-color: var(--card-bg);
     border-radius: 8px;
     box-shadow: var(--shadow);
     padding: 2rem;
     margin: 2rem 0;
+    animation: fadeIn 0.6s ease forwards;
 }
 
 .card h2 {
@@ -197,6 +229,7 @@ header h2 {
     color: var(--secondary-color);
 }
 
+/* Timeline */
 .timeline {
     position: relative;
     padding-left: 3rem;
@@ -249,6 +282,7 @@ header h2 {
     margin-bottom: 0.5rem;
 }
 
+/* Skills */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -298,6 +332,7 @@ header h2 {
     font-size: 0.9rem;
 }
 
+/* Interests */
 .interests-container {
     display: flex;
     flex-wrap: wrap;
@@ -333,6 +368,7 @@ header h2 {
     color: white;
 }
 
+/* Projects */
 .github-container {
     text-align: center;
 }
@@ -363,7 +399,7 @@ header h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0; /* Fallback if image fails to load */
+    background-color: #f0f0f0;
 }
 
 .project-image img {
@@ -376,6 +412,7 @@ header h2 {
 .project-card:hover .project-image img {
     transform: scale(1.05);
 }
+
 .project-info {
     padding: 1.5rem;
 }
@@ -424,31 +461,7 @@ header h2 {
     background-color: var(--secondary-color);
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
-.social-links a {
-    color: white;
-    font-size: 1.5rem;
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    color: var(--secondary-color);
-}
-
+/* Contact Form */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -486,6 +499,33 @@ footer {
     background-color: #2980b9;
 }
 
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Back to Top */
 #back-to-top {
     position: fixed;
     bottom: 30px;
@@ -517,14 +557,11 @@ footer {
     background-color: var(--primary-color);
     transform: translateY(-3px);
 }
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-.card {
-    animation: fadeIn 0.6s ease forwards;
 }
 
 /* Responsive Design */
@@ -558,5 +595,19 @@ footer {
     
     .timeline-date {
         left: -2.5rem;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .download-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header {
+        padding: 2rem 0 3rem;
     }
 }
