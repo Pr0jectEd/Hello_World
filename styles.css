@@ -232,13 +232,14 @@ header h2 {
 /* Timeline */
 .timeline {
     position: relative;
-    padding-left: 3rem;
+    padding-left: 5rem; /* Increased padding to prevent overlap */
+    margin-left: 1rem; /* Added margin for better spacing */
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 1.5rem;
+    left: 2.5rem; /* Adjusted position to align with new padding */
     top: 0;
     bottom: 0;
     width: 2px;
@@ -247,12 +248,12 @@ header h2 {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem; /* Increased margin between items */
 }
 
 .timeline-date {
     position: absolute;
-    left: -3rem;
+    left: -5rem; /* Adjusted to match new padding */
     top: 0;
     background-color: var(--secondary-color);
     color: white;
@@ -260,6 +261,8 @@ header h2 {
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 600;
+    width: 4rem; /* Fixed width for consistent dates */
+    text-align: center;
 }
 
 .timeline-content {
@@ -267,6 +270,8 @@ header h2 {
     padding: 1.5rem;
     border-radius: 8px;
     position: relative;
+    margin-left: 1rem; /* Added margin to separate from line */
+    box-shadow: var(--shadow);
 }
 
 .timeline-content h3 {
@@ -276,10 +281,16 @@ header h2 {
 
 .timeline-content ul {
     padding-left: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .timeline-content li {
     margin-bottom: 0.5rem;
+}
+
+/* Add this to ensure timeline items don't overlap */
+.timeline-item:last-child {
+    margin-bottom: 0;
 }
 
 /* Skills */
