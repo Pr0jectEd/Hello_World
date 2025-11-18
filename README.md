@@ -5,7 +5,7 @@
   </a>
 
 
-🎓 Je suis actuellement en formation **Développeur Web et Web Mobile** chez **BGE**, où j'explore en profondeur les technologies du **front-end** et du **back-end**, tout en appliquant la méthode **AGILE** dans mes projets.
+🎓 J'ai fini ma formation **Développeur Web et Web Mobile** chez **BGE**, où j'ai exploré en profondeur les technologies du **front-end** et du **back-end**, tout en appliquant la méthode **AGILE** dans mes projets.
 
 🌱 Passionné par le développement d’applications concrètes, j’aime apprendre en continu, que ce soit sur les outils modernes du web, l'infrastructure cloud ou la cybersécurité.
 
